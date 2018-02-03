@@ -89,6 +89,7 @@ docker build -t openresty .
 ### Starting the container
 
 ```
+cd ..
 ansible-playbook openresty-cnt-start.yml
 ```
 
