@@ -55,7 +55,7 @@ ssh -i <aws-ssh-keys> ubuntu@<public-ip>
 
 ```
 chmod 400 aws-keys
-ssh -i aws-keys.pem ubuntu@34.213.82.140
+ssh -i aws-keys.pem ubuntu@54.186.177.39
 ```
 
 ### Clone git repo to your AWS instance
@@ -97,3 +97,11 @@ ansible-playbook openresty-cnt-start.yml
 ```
 ansible-playbook openresty-cnt-stop.yml
 ```
+
+### Installing nagios and monitoring openresty
+
+### Change email address under roles/nagios-install/files/contacts_nagios2.cfg
+```
+ansible-playbook nagios.yml
+```
+
