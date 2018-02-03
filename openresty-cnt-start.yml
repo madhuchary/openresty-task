@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  become: yes
   tasks:
   - name: Start openresty server on port 80
     docker:
