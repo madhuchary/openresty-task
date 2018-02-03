@@ -3,6 +3,7 @@
 Launching AWS EC2 Instance using Boto3 SDK
 
 ## Getting Started
+In This demo I prefer to use Ubuntu as I am very comfortable with deb packaging and Debian is a non-profit organization
 
 ### Prerequisites
 
