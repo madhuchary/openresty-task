@@ -30,7 +30,7 @@ Default output format [None]: json
 ### Clone this repo in your local machine
 
 ```
-git clone 
+git clone https://github.com/madhuchary/openresty-task.git
 ```
 
 ### Create security group
@@ -55,13 +55,13 @@ ssh -i <aws-ssh-keys> ubuntu@<public-ip>
 
 ```
 chmod 400 aws-keys
-ssh -i aws-keys ubuntu@
+ssh -i aws-keys.pem ubuntu@34.213.82.140
 ```
 
 ### Clone git repo to your AWS instance
 
 ```
-git clone
+git clone https://github.com/madhuchary/openresty-task.git
 ```
 
 ## CD to the cloned directory and execute the below commnads 
@@ -86,4 +86,14 @@ cd docker
 docker build -t openresty .
 ```
 
+### Starting the container
 
+```
+ansible-playbook openresty-cnt-start.yml
+```
+
+### Stopping the container
+
+```
+ansible-playbook openresty-cnt-stop.yml
+```

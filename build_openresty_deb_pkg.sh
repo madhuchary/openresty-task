@@ -26,5 +26,5 @@ debuild -us -uc
 
 sudo mkdir /openresty-deb-pkg
 sudo cp ../openresty_1.13.6.1-1_amd64.deb /openresty-deb-pkg/
-sudo cp ../openresty_1.13.6.1-1_amd64.deb ~/assignment/docker/
+sudo cp ../openresty_1.13.6.1-1_amd64.deb ~/openresty-task/docker/
 sudo rm -rf ../../openresty
