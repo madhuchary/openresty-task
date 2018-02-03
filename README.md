@@ -45,7 +45,7 @@ bash sg-rules.sh
 ```
 pip install boto3
 ```
-* Launcing AWS EC2 Instance using boto3 (AWS SDK for Python)
+* Launching AWS EC2 Instance using boto3 (AWS SDK for Python)
 ```
 ptyhon ec2-launch.py
 ```
@@ -65,7 +65,7 @@ ssh -i aws-keys.pem ubuntu@54.186.177.39
 git clone https://github.com/madhuchary/openresty-task.git
 ```
 
-## CD to the cloned directory and execute the below commnads 
+## CD to the cloned directory and execute the below commands 
 
 ### Install Docker CE 
 
@@ -107,3 +107,9 @@ ansible-playbook openresty-cnt-stop.yml
 ansible-playbook nagios.yml
 ```
 
+### Testing the monitoring 
+### Stop openresty container and wait for sometime and you should receive an email (Please check spam as well)
+
+```
+ansible-playbook openresty-cnt-stop.yml
+```
